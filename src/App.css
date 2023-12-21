@@ -1,0 +1,195 @@
+#textblock {
+    background-color: #210002;
+    height: 100vh;
+  }
+  
+  #textblock-container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+  
+  #textblock-title {
+    color: #ffaf1b;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Helvetica Neue";
+  }
+  
+  #textblock-content {
+    color: #ffaf1b;
+    font-size: 20px;
+  }
+  
+  #textblock-footer {
+    color: #ffaf1b;
+    font-size: 15px;
+    font-weight: 400;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin-bottom: 20px;
+  
+  }
+  
+  #textblock-devsense {
+    text-decoration: none;
+    color: #ffaf1b;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .animation, .animation_layer {
+      height: 1000px;
+  }
+  
+  .animation {
+    display: block;
+      position: relative;
+      z-index: 10;
+  }
+  
+  .animation_layer {
+      background-position: bottom center;
+      background-size: auto 1038px;
+      background-repeat: repeat-x;
+      width: 100%;
+      position: absolute;
+  }
+  .animation_layer.parallax {
+      position: fixed;
+  }
+  
+  #artback {
+    background-color: burlywood;
+  }
+  
+  #mountain {
+    background-image: url(./images/mountains.png);
+  }
+  
+  #logoland {
+    background-image: url(./images/LOGOO.png);
+  }
+  
+  #jungle1 {
+    background-image: url(./images/jungle1.png);
+  }
+  
+  #jungle2 {
+    background-image: url(./images/jungle2.png);
+  }
+  
+  #jungle3 {
+    background-image: url(./images/jungle3.png);
+  }
+  
+  #jungle4 {
+    background-image: url(./images/jungle4.png);
+  }
+  
+  #jungle5 {
+    background-image: url(./images/jungle5.png);
+  }
+  
+  #manonmountain {
+    background-image: url(./images/man_on_mountain.png);
+  }
+  #jungle5 {
+    background-image: url(./Images/jungle5.png);
+  }
+  /* #stars {
+    opacity: 90%;
+    background-image: url(data:image/jpeg;base64,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);
+  } */
+  .h p{
+    color: rgb(0, 0, 0);
+  }
+  /* .img{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+  } */
+  #layer1{
+    background-image: url(./Images/Parallax/1.png);
+  }
+  #layer2{
+    background-image: url(./Images/Parallax/2.png);
+  }
+  #layer3{
+    background-image: url(./Images/Parallax/3.png);
+  }
+  #layer4{
+    background-image: url(./Images/Parallax/4.png);
+  }
+  #layer5{
+    background-image: url(./Images/Parallax/5.png);
+  }
+  #layer6{
+    background-image: url(./Images/Parallax/6.png);
+  }
+  #layer7{
+    background-image: url(./Images/Parallax/7.png);
+  }
+  #layer8{
+    background-image: url(./Images/Parallax/8.png);
+  }
+  #layer9{
+    background-image: url(./Images/Parallax/9.png);
+  }
+  #layer10{
+    background-image: url(./Images/Parallax/10.png);
+  }
+  #aa{
+    background-image: url(./Images/logo_land.png);
+  }
+  #a{
+    background-image: url(./Images/Rocket/layer_08.png);
+  }
+  #b{
+    background-image: url(./Images/Rocket/layer_07.2.png);
+  }
+  #c{
+    background-image: url(./Images/Rocket/layer_06.2.png);
+  }
+  #d{
+    background-image: url(./Images/Rocket/layer_06.png);
+  }
+  #e{
+    background-image: url(./Images/Rocket/layer_05.2.png);
+  }
+  #f{
+    background-image: url(./Images/Rocket/layer_05.png);
+  }
+  #g{
+    background-image: url(./Images/Rocket/layer_04.2.png);
+  }
+  #h{
+    background-image: url(./Images/Rocket/layer_04.png);
+  }
+  #i{
+    background-image: url(./Images/Rocket/layer_03.2.png);
+  }
+  #j{
+    background-image: url(./Images/Rocket/layer_03.png);
+  }
+  #k{
+    background-image: url(./Images/Rocket/layer_02.2.png);
+  }
+  #l{
+    background-image: url(./Images/Rocket/layer_02.png);
+  }
+  #m{
+    background-image: url(./Images/Rocket/layer_01..2png);
+  }
+  #n{
+    background-image: url(./Images/Rocket/layer_01.png);
+  }
+  .ss{
+    background-image: url(./Images/jungle1.png);
+    background-size: contain;
+  }
+ 
+ 
